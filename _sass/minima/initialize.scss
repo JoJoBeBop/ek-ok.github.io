@@ -1,15 +1,46 @@
 @charset "utf-8";
 
+// Custom Fonts
+
+@mixin fontCrimson($name, $weight, $style) {
+    @font-face {
+        font-family: Crimson;
+        src: url('./../../assets/fonts/#{$name}') format("truetype");
+        font-weight: $weight;
+        font-style: $style;
+        font-display: block;
+    }
+}
+
+@mixin fontFucxed($name, $weight, $style) {
+    @font-face {
+        font-family: Fucxed;
+        src: url('./../../assets/fonts/#{$name}') format("truetype");
+        font-weight: $weight;
+        font-style: $style;
+        font-display: block;
+    }
+}
+
+/* @font-face {
+  font-family: "Crimson";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./../../assets/fonts/CrimsonText-Regular.woff"); 
+  src: local(""),
+      url("./../../assets/fonts/CrimsonText-Regular.woff") format("woff"),
+} */
+
 // Define defaults for each variable.
 
-$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;
+$base-font-family: Crimson, Arial, Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Helvetica, Arial, sans-serif !default;
 $code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
-$base-font-size:   16px !default;
+$base-font-size:   18px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
-$spacing-unit:     30px !default;
+$spacing-unit:     40px !default;
 
 $table-text-align: left !default;
 
@@ -21,6 +52,8 @@ $on-laptop:        800px !default;
 
 $on-medium:        $on-palm !default;
 $on-large:         $on-laptop !default;
+
+$border-color-04:  #ffffff;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -36,6 +69,7 @@ $on-large:         $on-laptop !default;
     @content;
   }
 }
+
 
 @mixin relative-font-size($ratio) {
   font-size: #{$ratio}rem;

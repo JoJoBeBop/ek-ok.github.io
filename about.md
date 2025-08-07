@@ -16,3 +16,6 @@ You can find the source code for Jekyll at GitHub:
 
 
 [jekyll-organization]: https://github.com/jekyll
+
+![er-logo](/assets/images/er-logo.png)
+

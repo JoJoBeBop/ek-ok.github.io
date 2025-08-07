@@ -3,65 +3,67 @@ layout: base
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
 
-  {{ content }}
+  <div>
+    <div>
+
+      <header class="post-header">
+        <h1 class="post-title">Elokapinan Keskiluokkakapina</h1>
+      </header>
+
+      <p>Keskiluokkakapina pyrkii muuttamaan yhteiskunnan rakenteita sellaisiksi, että tavallisen ihmisen olisi helppoa
+        elää tavallista elämäänsä ekologisesti kestävällä tavalla. Keskiluokkakapinaan ovat tervetulleet kaikki, joiden
+        rinnassa sykkii keskiluokkainen sydän ja (tai tai) jotka näkevät keskiluokan valinnoissa ja aktivoinnissa
+        avaimet ekokriisistä selviämiseen.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="text-content-duo-wrapper">
+    <div>
+      <p>Keskiluokkakapina herättelee viestillään ennen kaikkea niitä tavallisia ihmisiä, jotka jo tunnistavat kriisin
+        laajuuden, mutta jotka silti yhä, vastoin parempaa tietoaan, yrittävät elää kuin mitään ei olisi
+        tapahtumassakaan.
+        Keskiluokkakapinan keinovalikoimaan kuuluvat valistus, mutta myös älykäs huumori ja kirpeä itseironia.
+        Huumorinsa
+        Keskiluokkakapina suuntaa aina joko ylempiinsä, sillä johtajien moraalinen velvollisuus olisi viimein ryhtyä
+        johtamaan meitä myös esimerkillään kohti planetaarisia rajoja kunnioittavaa elämäntapaa, tai, omat puutteensa
+        rehellisesti tunnustaen, kanssakeskiluokkaisiinsa, joiden luomalla kysynnällä on ratkaiseva vaikutus siihen,
+        mitä on
+        realistista tarjota.
+      </p>
+    </div>
+
+    <div>
+      <img src="../assets/images/er-logo.png" alt="">
+
+    </div>
+
+  </div>
+
+<!--   <p>Keskiluokkakapina herättelee viestillään ennen kaikkea niitä tavallisia ihmisiä, jotka jo tunnistavat kriisin
+    laajuuden, mutta jotka silti yhä, vastoin parempaa tietoaan, yrittävät elää kuin mitään ei olisi
+    tapahtumassakaan.
+    Keskiluokkakapinan keinovalikoimaan kuuluvat valistus, mutta myös älykäs huumori ja kirpeä itseironia.
+    Huumorinsa
+    Keskiluokkakapina suuntaa aina joko ylempiinsä, sillä johtajien moraalinen velvollisuus olisi viimein ryhtyä
+    johtamaan meitä myös esimerkillään kohti planetaarisia rajoja kunnioittavaa elämäntapaa, tai, omat puutteensa
+    rehellisesti tunnustaen, kanssakeskiluokkaisiinsa, joiden luomalla kysynnällä on ratkaiseva vaikutus siihen,
+    mitä on
+    realistista tarjota.
+  </p> -->
 
 
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
 
 
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.minima.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+  <p>Keskiluokkakapina ei siis tee valintaa siemenen ja kasvin (ent. kanan ja munan) välillä vaan valitsee sekä
+    yhteiskunnan rakenteet että arjen “matalalla roikkuvat hedelmät”.
+  </p>
 
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li>
-            <a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page" title="Go to Page {{ paginator.previous_page }}">
-              {{ paginator.previous_page }}
-            </a>
-          </li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li>
-            <a href="{{ paginator.next_page_path | relative_url }}" class="next-page" title="Go to Page {{ paginator.next_page }}">
-              {{ paginator.next_page }}
-            </a>
-          </li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
-  {%- endif -%}
+  <p>Keinovalikoimaltaan Keskiluokkakapina on keskiluokkainen, eli sen järjestämät tapahtumat ovat aina ns. vihreän
+    valon tilaisuuksia, joissa vastakkainasettelun sijaan tavoitellaan yhteisyyttä ja yhteistä päämäärää.
+  </p>
+
+
 </div>

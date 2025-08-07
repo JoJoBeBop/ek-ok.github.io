@@ -1,4 +1,5 @@
-<link id="fa-stylesheet" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
+<link id="fa-stylesheet" rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
 
 <footer class="site-footer h-card">
   <data class="u-url" value="{{ '/' | relative_url }}"></data>
@@ -7,25 +8,18 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col">
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
-        </ul>
-      {%- endif %}
-      </div>
-      <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
+        <!-- <p>{{ site.description | escape }}</p> -->
+        <p>Elokapina (Extinction Rebellion Finland, XR FI) on tee-se-yhdessä -liike. Kaikkea designia ja taidettamme saa
+          käyttää ei-kaupallisissa elonkehää suojelevissa tarkoituksissa. Tämä ei tarkoita tuotteistamista varainkeruuta
+          varten, ei myöskään tilanteissa, joissa Elokapina tai XR laajemmin saa osuuden myynnistä. Emme anna
+          hyväksyntää, tue, suunnittele tai valmista mitään hyödykkeitä. Extinction-symbolin suunnitteli vuonna 2011
+          katutaiteilija ESP, joka lainaa symbolin XR-käyttöön samoin perustein: www.extinctionsymbol.info. </p>
       </div>
     </div>
 
-    <div class="social-links">
+<!--     <div class="social-links">
       {%- include social.html -%}
-    </div>
+    </div> -->
 
   </div>
 
